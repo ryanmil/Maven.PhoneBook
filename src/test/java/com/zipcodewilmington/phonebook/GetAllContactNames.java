@@ -3,6 +3,8 @@ package com.zipcodewilmington.phonebook;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,6 +14,8 @@ public class GetAllContactNames {
         // given
         PhoneBook phoneBook = new PhoneBook();
         String[] names = new String[]{"John", "Joe", "Jim", "Jay"};
+        Arrays.sort(names);
+
         for (int i = 0; i < names.length; i++) {
             String name = names[i];
             phoneBook.add(name, "");
@@ -29,6 +33,8 @@ public class GetAllContactNames {
         // given
         PhoneBook phoneBook = new PhoneBook();
         String[] names = new String[]{"Chris", "Christian", "Christopher", "Christina"};
+        Arrays.sort(names);
+
         for (int i = 0; i < names.length; i++) {
             String name = names[i];
             phoneBook.add(name, "");
@@ -46,6 +52,8 @@ public class GetAllContactNames {
         // given
         PhoneBook phoneBook = new PhoneBook();
         String[] names = new String[]{"Ashley", "Aaron", "Albert", "Alfred"};
+        Arrays.sort(names);
+
         for (int i = 0; i < names.length; i++) {
             String name = names[i];
             phoneBook.add(name, "");
